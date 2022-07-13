@@ -15,7 +15,7 @@ def get_apikey():
 
 
 def get_json_data():
-    url = 'aHR0cHM6Ly93d3cub2tsaW5rLmNvbS96aC1jbi9idGMvdHgtbGlzdD9saW1pdD0yMCZwYWdlTnVtPTE='
+    url = 'https://www.oklink.com/zh-cn/btc/tx-list?limit=20&pageNum=1'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'x-apiKey': get_apikey()
