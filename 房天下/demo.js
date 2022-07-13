@@ -1,3 +1,4 @@
+
 function setMaxDigits(n) {
     maxDigits = n;
     ZERO_ARRAY = new Array(maxDigits);
