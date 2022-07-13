@@ -3,9 +3,8 @@
 # @File: demo.py
 # @Author: liyf
 
-import requests
-
 import execjs
+import requests
 
 from loguru import logger
 
