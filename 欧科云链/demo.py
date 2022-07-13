@@ -3,8 +3,8 @@
 # @File: demo.py
 # @Author: liyf
 
-import requests
 import execjs
+import requests
 
 
 def get_apikey():
