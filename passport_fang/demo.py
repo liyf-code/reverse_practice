@@ -32,7 +32,7 @@ def get_json_data(user, pwd):
         'AutoLogin': '1',
     }
 
-    response = requests.post('https://passport.fang.com/', headers=headers, data=data)
+    response = requests.post('https://passport.fang.com/login.api', headers=headers, data=data)
     return response.json()
 
 

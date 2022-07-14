@@ -3,6 +3,8 @@
 # @File: demo.py
 # @Author: liyf
 
+import time
+
 import execjs
 import requests
 
@@ -15,7 +17,7 @@ def get_apikey():
 
 
 def get_json_data():
-    url = 'https://www.oklink.com/zh-cn/btc/tx-list?limit=20&pageNum=1'
+    url = f'https://www.oklink.com/api/explorer/v1/btc/transactionsNoRestrict?t={str(int(time.time()) * 1000)}&limit=20&offset=0'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'x-apiKey': get_apikey()
