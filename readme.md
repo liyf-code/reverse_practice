@@ -1,3 +1,7 @@
+### PS: 本项目仅用于学习交流，切勿用于任何非法用途
+
+***
+
 ### 关于js逆向的一些加密参数的定位技巧，可以参考 [Boris](https://github.com/Boris-code) 大佬的这篇文章
 
 > [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
