@@ -31,10 +31,6 @@ F = function (e) {
         return e
     }
 }
-K = function () {
-    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
-    return e.replace(/\s+/g, "")
-};
 
 //password: encodeURI(Object(u["c"])(s.value, Object(u["f"])(Object(u["g"])(r.value))))
 function get_pwd(pwd, username) {
