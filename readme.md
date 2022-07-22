@@ -10,8 +10,7 @@
 
 - <big>生成 `requirements.txt`</big>
   ```
-  cd reverse_practice/
-  pipreqs reverse_practice --encoding=utf8
+  pipreqs reverse_practice --encoding=utf8 --force
   ```
 
 ***
