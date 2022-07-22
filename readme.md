@@ -1,10 +1,18 @@
-### PS: 本项目仅供学习交流，严禁用于任何商业和非法用途，如有侵权，可联系本人删除（微信: `18839782321`）！
+### PS: 本项目仅供学习交流，严禁用于任何商业和非法用途，非本人使用而产生的纠纷与一切后果均与本人无关。如有侵权，可联系本人删除（微信: `18839782321`）！
 
 ***
 
 ### 关于js逆向的一些加密参数的定位技巧，可以参考 [Boris](https://github.com/Boris-code) 大佬的这篇文章
 
 > [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
+
+***
+
+- <big>生成 `requirements.txt`</big>
+  ```
+  cd reverse_practice/
+  pipreqs reverse_practice --encoding=utf8
+  ```
 
 ***
 
