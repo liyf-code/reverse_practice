@@ -1,4 +1,5 @@
-PyExecJS==1.5.1
 loguru==0.5.3
+PyExecJS==1.5.1
 rsa==4.7.2
 requests==2.25.1
+fontTools==4.34.4
