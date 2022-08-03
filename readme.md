@@ -29,43 +29,101 @@ web_name  |web_url|  document  |  project_name
 
 ### 钩子函数
 
-- <big>cookie钩子
+> 以下汇总常用的hook代码，来源于 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
+
+- <big>hook cookie
 
   ```javascript
-  var code = function () {
-      var org = document.cookie.__lookupSetter__('cookie');
-      document.__defineSetter__("cookie", function (cookie) {
-          if (cookie.indexOf('TSdc75a61a') > -1) {
-              debugger;
-          }
-          org = cookie;
-      });
-      document.__defineGetter__("cookie", function () {
-          return org;
-      });
-  }
-  var script = document.createElement('script');
-  script.textContent = '(' + code + ')()';
-  (document.head || document.documentElement).appendChild(script);
-  script.parentNode.removeChild(script);
+  (function () {
+    'use strict';
+    var cookieTemp = '';
+    Object.defineProperty(document, 'cookie', {
+      set: function (val) {
+        if (val.indexOf('__dfp') != -1) {
+          debugger;
+        }
+        console.log('Hook捕获到cookie设置->', val);
+        cookieTemp = val;
+        return val;
+      },
+      get: function () {
+        return cookieTemp;
+      },
+    });
+  })();
+
   ```
 
-- <big>header钩子
-
+- <big>hook header
   ```javascript
-  var code = function () {
+  (function () {
+      var org = window.XMLHttpRequest.prototype.setRequestHeader;
+      window.XMLHttpRequest.prototype.setRequestHeader = function (key, value) {
+          if (key == 'safe') {
+              debugger;
+          }
+          return org.apply(this, arguments);
+      };
+  })();
+  ```
+
+- </big>hook URL
+  ```javascript
+  (function () {
       var open = window.XMLHttpRequest.prototype.open;
       window.XMLHttpRequest.prototype.open = function (method, url, async) {
-          if (url.indexOf("MmEwMD") > -1) {
+          if (url.indexOf("login") != -1) {
               debugger;
           }
           return open.apply(this, arguments);
       };
-  }
-  var script = document.createElement('script');
-  script.textContent = '(' + code + ')()';
-  (document.head || document.documentElement).appendChild(script);
-  script.parentNode.removeChild(script);
+  })();
   ```
+
+- <big>hook JSON.stringify
+  ```javascript
+  (function() {
+      var stringify = JSON.stringify;
+      JSON.stringify = function(params) {
+          console.log("Hook JSON.stringify ——> ", params);
+          debugger;
+          return stringify(params);
+      }
+  })();
+  ```
+  
+- <big>hook JSON.parse
+  ```javascript
+  (function() {
+      var parse = JSON.parse;
+      JSON.parse = function(params) {
+          console.log("Hook JSON.parse ——> ", params);
+          debugger;
+          return parse(params);
+      }
+  })();
+  ```
+  
+- <big>hook eval
+  ```javascript
+  (function() {
+      // 保存原始方法
+      window.__cr_eval = window.eval;
+      // 重写 eval
+      var myeval = function(src) {
+          console.log(src);
+          console.log("=============== eval end ===============");
+          debugger;
+          return window.__cr_eval(src);
+      }
+      // 屏蔽 JS 中对原生函数 native 属性的检测
+      var _myeval = myeval.bind(null);
+      _myeval.toString = window.__cr_eval.toString;
+      Object.defineProperty(window, 'eval', {
+          value: _myeval
+      });
+  })();
+  ```
+
 
 ***
