@@ -29,10 +29,9 @@ web_name  |web_url|  document  |  project_name
 
 ### 钩子函数
 
-> 以下汇总常用的hook代码，来源于 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
+> 以下汇总常用的hook代码，来源于公众号文章 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
 
-- <big>hook cookie
-
+- <big>hook cookie</big>
   ```javascript
   (function () {
     'use strict';
@@ -54,7 +53,7 @@ web_name  |web_url|  document  |  project_name
 
   ```
 
-- <big>hook header
+- <big>hook header</big>
   ```javascript
   (function () {
       var org = window.XMLHttpRequest.prototype.setRequestHeader;
@@ -67,7 +66,7 @@ web_name  |web_url|  document  |  project_name
   })();
   ```
 
-- </big>hook URL
+- </big>hook URL</big>
   ```javascript
   (function () {
       var open = window.XMLHttpRequest.prototype.open;
@@ -80,7 +79,7 @@ web_name  |web_url|  document  |  project_name
   })();
   ```
 
-- <big>hook JSON.stringify
+- <big>hook JSON.stringify</big>
   ```javascript
   (function() {
       var stringify = JSON.stringify;
@@ -91,8 +90,8 @@ web_name  |web_url|  document  |  project_name
       }
   })();
   ```
-  
-- <big>hook JSON.parse
+
+- <big>hook JSON.parse</big>
   ```javascript
   (function() {
       var parse = JSON.parse;
@@ -103,8 +102,8 @@ web_name  |web_url|  document  |  project_name
       }
   })();
   ```
-  
-- <big>hook eval
+
+- <big>hook eval</big>
   ```javascript
   (function() {
       // 保存原始方法
@@ -124,6 +123,5 @@ web_name  |web_url|  document  |  project_name
       });
   })();
   ```
-
 
 ***
