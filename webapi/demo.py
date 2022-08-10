@@ -15,6 +15,10 @@ def get_mcode():
 
 
 def get_results():
+    """
+    请求头中 `Referer` 参数不能缺，否则报错:
+    {"resultmsg":"未经授权的访问,code:005","resultcode":401}
+    """
     headers = {
         'Accept': 'application/json, text/javascript, */*; q=0.01',
         'Accept-Language': 'zh-CN,zh;q=0.9',
