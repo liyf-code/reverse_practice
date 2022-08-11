@@ -43,4 +43,5 @@ def parse():
 
 
 if __name__ == '__main__':
+    # https://webapi.cninfo.com.cn/#/aiInfos
     parse()
