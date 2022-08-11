@@ -25,6 +25,7 @@ web_name  |web_url|  document  |  project_name
 天翼云  |  [链接](https://m.ctyun.cn/wap/main/auth/login)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/125867236?spm=1001.2014.3001.5501)  |  ctyun
 猿人学  | [链接](https://www.python-spider.com/challenge/)  |    |  yaunrenxue
 巨潮资讯-数据中心  |  [链接](https://webapi.cninfo.com.cn/#/aiInfos)  |   |  webapi
+MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/126285221?spm=1001.2014.3001.5501)  |  mytokencap
 
 ***
 
