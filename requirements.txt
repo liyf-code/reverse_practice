@@ -1,6 +1,7 @@
+loguru==0.5.3
+Js2Py==0.71
 lxml==4.6.3
 PyExecJS==1.5.1
-rsa==4.7.2
-loguru==0.5.3
 requests==2.25.1
+rsa==4.7.2
 fontTools==4.34.4
