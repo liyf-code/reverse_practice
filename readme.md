@@ -17,7 +17,7 @@
 
 ### 从202207开始整理爬虫的一些逆向案例，不定时更新
 
-web_name  |web_url|  document  |  project_name
+网站名称  |  网站url地址  |  文档  |  项目名称
 ---|---|---|---
 欧科云链  |  [链接](https://www.oklink.com/zh-cn/btc/tx-list?limit=20&pageNum=1)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/125619096?spm=1001.2014.3001.5501)  | oklink
 房天下  |  [链接](https://passport.fang.com/)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/125658235?spm=1001.2014.3001.5501)  |  passport_fang
@@ -26,6 +26,7 @@ web_name  |web_url|  document  |  project_name
 猿人学  | [链接](https://www.python-spider.com/challenge/)  |    |  yaunrenxue
 巨潮资讯-数据中心  |  [链接](https://webapi.cninfo.com.cn/#/aiInfos)  |   |  webapi
 MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/126285221?spm=1001.2014.3001.5501)  |  mytokencap
+新榜资讯  |  [链接](https://www.newrank.cn/public/news.html)  |    |  newrank
 
 ***
 
