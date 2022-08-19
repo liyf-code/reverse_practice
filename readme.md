@@ -28,7 +28,8 @@
 MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/126285221?spm=1001.2014.3001.5501)  |  mytokencap
 新榜资讯  |  [链接](https://www.newrank.cn/public/news.html)  |    |  newrank
 粉笔网  |  [链接](https://fenbi.com/page/home)  |    |  fenbi
-福建省公共资源交易-交易信息  | [链接](https://ggzyfw.fujian.gov.cn/web/index.html#/business/list)  |    |  ggzyfw_fujian
+福建省公共资源交易-交易信息  | [链接](https://ggzyfw.fujian.gov.cn/web/index.html#/business/list)  |  [点击跳转](reverse_practice/ggzyfw_fujian/demo.py)  |  ggzyfw_fujian
+犀牛数据  | [链接](https://www.xiniudata.com/industry/newest?from=data)  |  [点击跳转](reverse_practice/xiniu/demo.py)  |  xiniu
 
 ***
 
