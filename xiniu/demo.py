@@ -4,11 +4,11 @@
 # @Author: liyf
 
 """
-
 todo:
     - 网站: https://www.xiniudata.com/industry/newest?from=data
     - 数据接口: https://www.xiniudata.com/api2/service/x_service/person_industry_list/list_industries_by_sort ，post请求，请求参数 payload, sig
 
+changelog 20220819
 该网站有两处需要进行破解
 1. 请求参数 payload 和 sig
     - 定位参数加密位置。使用常规的全局搜索这两个参数，搜索到的结果太多，不太好分析。此时我们采用 XHR 断点进行分析。
