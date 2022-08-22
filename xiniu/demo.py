@@ -50,8 +50,8 @@ def get_data(start, encrypt_data):
     """
     解析js文件，当 encrypt_data 不存在时，说明start存在，此时解析请求参数payload；
     当 start 不存在时，说明encrypt_data存在，此时对返回数据解密进行解析
-    :param start: 解析参数payload时，需要当参数
-    :param encrypt_data: 返回结果解密，需要当参数
+    :param start: 解析参数payload时，需要的参数
+    :param encrypt_data: 返回结果解密，需要的参数
     :return: result
     """
     with open('demo.js', 'r') as f:
