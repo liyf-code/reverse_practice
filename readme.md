@@ -17,6 +17,8 @@
 
 ### 从202207开始整理爬虫的一些逆向案例，不定时更新
 
+> <big>个别网站的逆向思路及步骤，记录在py文件中</big>
+
 网站名称  |  网站url地址  |  文档  |  项目名称
 ---|---|---|---
 欧科云链  |  [链接](https://www.oklink.com/zh-cn/btc/tx-list?limit=20&pageNum=1)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/125619096?spm=1001.2014.3001.5501)  | oklink
@@ -30,6 +32,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 粉笔网  |  [链接](https://fenbi.com/page/home)  |    |  fenbi
 福建省公共资源交易-交易信息  | [链接](https://ggzyfw.fujian.gov.cn/web/index.html#/business/list)  |  [点击跳转](ggzyfw_fujian/demo.py)  |  ggzyfw_fujian
 犀牛数据  | [链接](https://www.xiniudata.com/industry/newest?from=data)  |  [点击跳转](xiniu/demo.py)  |  xiniu
+全国建筑市场监管公共服务平台  |  [链接](http://jzsc.mohurd.gov.cn/data/company)  |  [点击跳转](jzsc/demo.py)  | jzsc
 
 ***
 
