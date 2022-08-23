@@ -74,7 +74,6 @@ def parse():
             url = data['url']
             print(f'标题: {title}\n描述: {desc}\n标签: {label}\n作者: {author}\n更新时间: {public_time}\n详情页地址: {url}')
             print('***' * 30)
-        break
 
 
 if __name__ == '__main__':
