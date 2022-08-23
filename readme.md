@@ -15,6 +15,13 @@
 
 ***
 
+### 辅助工具
+
+- 把curl转换成python代码: [curlconverter](https://curlconverter.com/)
+- 1024程序员开发工具箱: [1024tools](https://1024tools.com/)
+
+***
+
 ### 从202207开始整理爬虫的一些逆向案例，不定时更新
 
 > <big>个别网站的逆向思路及步骤，记录在py文件中</big>
