@@ -204,5 +204,5 @@ function get_sign(lastId) {
         tabId: "",
         version: "4.73.0"
     }
-    return  C(params)
+    return C(params)
 }
