@@ -71,7 +71,6 @@ def parse():
             logoUrl = product['logoUrl']
             print(f'产品名称: {title}\n价格: {price}\n销量: {soldCountText}\n图片地址: {logoUrl}')
             print('==='*35)
-        break
 
 
 if __name__ == '__main__':
