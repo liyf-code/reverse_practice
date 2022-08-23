@@ -70,7 +70,7 @@ def parse():
             price = int(product['price']) / 100
             logoUrl = product['logoUrl']
             print(f'产品名称: {title}\n价格: {price}\n销量: {soldCountText}\n图片地址: {logoUrl}')
-            print('==='*35)
+            print('===' * 35)
 
 
 if __name__ == '__main__':
