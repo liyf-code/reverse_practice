@@ -41,6 +41,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 犀牛数据  | [链接](https://www.xiniudata.com/industry/newest?from=data)  |  [点击跳转](xiniu/demo.py)  |  xiniu
 全国建筑市场监管公共服务平台  |  [链接](http://jzsc.mohurd.gov.cn/data/company)  |  [点击跳转](jzsc/demo.py)  | jzsc
 得物(m.poizon.com)  |  [链接](https://m.poizon.com/router/)  |  [点击跳转](dewu/demo.py)  |  dewu
+网易云  |  [链接](https://music.163.com/)  |    |  music163
 
 ***
 
