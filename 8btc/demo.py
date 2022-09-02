@@ -64,8 +64,9 @@ def parse(json_data):
         up = node['sense']['up']
         down = node['sense']['down']
         desc = node['post']['desc']
-        print(f'标题: {title}\n发布时间: {release_time}\n来源: {source}\n利好: {up}\n利空: {down}\n原文链接: {links}\n内容: {desc.strip()}')
-        print('==='*30)
+        print(
+            f'标题: {title}\n发布时间: {release_time}\n来源: {source}\n利好: {up}\n利空: {down}\n原文链接: {links}\n内容: {desc.strip()}')
+        print('===' * 30)
 
     page_info = results['data']['articleGraph']['list']['pageInfo']
     has_next_page = page_info['hasNextPage']
