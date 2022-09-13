@@ -7,9 +7,8 @@
 post请求中的 token 参数破解
 对 页码 进行md5加密，并取16位
 """
-
-import requests
 import hashlib
+import requests
 
 from loguru import logger
 
