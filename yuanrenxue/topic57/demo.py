@@ -22,11 +22,9 @@ def get_results(page):
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
     }
-
     data = {
         'page': page,
     }
-
     response = requests.post('https://www.python-spider.com/api/challenge57', headers=headers, data=data)
     return response.json()
 

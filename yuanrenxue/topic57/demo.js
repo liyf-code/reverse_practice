@@ -1,6 +1,5 @@
 var CryptoJS = require('crypto-js')
 
-
 function I(X, l) {
     var C = X
         , q = CryptoJS.enc.Utf8.parse(C)
