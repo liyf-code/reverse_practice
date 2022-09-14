@@ -15,6 +15,12 @@
 
 ***
 
+### clone this repository
+> git clone git@github.com:liyf-code/reverse_practice.git
+> cd reverse_practice && pip3 install -r requirements
+
+***
+
 ### 辅助工具
 
 - 把curl转换成python代码: [curlconverter](https://curlconverter.com/)
