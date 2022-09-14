@@ -62,7 +62,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 
 > 以下汇总常用的hook代码，来源于公众号文章 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
 
-- <big>hook cookie</big>
+- <big>Hook cookies</big>
   ```javascript
   (function () {
     'use strict';
@@ -83,7 +83,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
   })();
   ```
 
-- <big>hook header</big>
+- <big>Hook headers</big>
   ```javascript
   (function () {
       var org = window.XMLHttpRequest.prototype.setRequestHeader;
@@ -96,7 +96,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
   })();
   ```
 
-- </big>hook URL</big>
+- </big>Hook URL</big>
   ```javascript
   (function () {
       var open = window.XMLHttpRequest.prototype.open;
@@ -109,7 +109,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
   })();
   ```
 
-- <big>hook JSON.stringify</big>
+- <big>Hook JSON.stringify</big>
   ```javascript
   (function() {
       var stringify = JSON.stringify;
@@ -121,7 +121,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
   })();
   ```
 
-- <big>hook JSON.parse</big>
+- <big>Hook JSON.parse</big>
   ```javascript
   (function() {
       var parse = JSON.parse;
@@ -133,7 +133,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
   })();
   ```
 
-- <big>hook eval</big>
+- <big>Hook eval</big>
   ```javascript
   (function() {
       // 保存原始方法
