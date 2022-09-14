@@ -15,9 +15,9 @@
 
 ***
 
-### clone this repository
-> git clone git@github.com:liyf-code/reverse_practice.git
-> cd reverse_practice && pip3 install -r requirements
+### download this repository
+- `git clone git@github.com:liyf-code/reverse_practice.git`
+- `cd reverse_practice && pip3 install -r requirements`
 
 ***
 
