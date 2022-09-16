@@ -60,20 +60,24 @@ def get_decrypt_data(content, strs):
 
 
 def parse():
-    keyword = input('请输入关键字:')
-    content, code = get_content(keyword)
-    strs = get_str(code)
-    decrypt_data = get_decrypt_data(content, strs)
-    records = decrypt_data['records']
-    for record in records:
-        title = record['standard_name']
-        province = record['province_name']
-        city = record['city_name']
-        area_name = record['area_name']
-        pca = f'{province}-{city}-{area_name}'
-        place_type = record['place_type']
-        print(f'搜索关键字: {keyword}\n标准名称: {title}\n地址: {pca}\n地区所属类型: {place_type}')
-        print('===' * 20)
+    while True:
+        keyword = input('请输入关键字:')
+        content, code = get_content(keyword)
+        strs = get_str(code)
+        decrypt_data = get_decrypt_data(content, strs)
+        records = decrypt_data['records']
+        if not records:
+            print(f'该关键字 (`{keyword}`) 下没有数据')
+            print(f'===' * 20)
+        for record in records:
+            title = record['standard_name']
+            province = record['province_name']
+            city = record['city_name']
+            area_name = record['area_name']
+            pca = f'{province}-{city}-{area_name}'
+            place_type = record['place_type']
+            print(f'搜索关键字: {keyword}\n标准名称: {title}\n地址: {pca}\n地区所属类型: {place_type}')
+            print('===' * 20)
 
 
 if __name__ == '__main__':
