@@ -15,7 +15,14 @@
 
 ***
 
+### 关于配置 `chromedriver` 环境
+
+- [document](chromedriver.md)
+
+***
+
 ### download this repository
+
 - `git clone git@github.com:liyf-code/reverse_practice.git`
 - `cd reverse_practice && pip3 install -r requirements.txt`
 
