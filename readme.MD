@@ -71,7 +71,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 ### 一些常见的乱码
 
 - 数据来源于爬虫交流群里边，一个大佬发的，如有侵权，请联系本人删除。
-  ![返回类型](images/response_type.png)
+  ![常见的乱码](images/response_type.png)
 
 ***
 
