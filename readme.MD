@@ -68,6 +68,13 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 
 ***
 
+### 一些常见的乱码
+
+- 数据来源于爬虫交流群里边，一个大佬发的，如有侵权，请联系本人删除。
+  ![返回类型](images/response_type.png)
+
+***
+
 ### 一些常用的hook代码
 
 > 以下汇总常用的hook代码，来源于公众号文章 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
