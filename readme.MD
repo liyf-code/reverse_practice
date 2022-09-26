@@ -31,7 +31,7 @@
 
 ### 爬虫辅助工具
 
-- curl转成python代码，提高开发效率: [curlconverter](https://curlconverter.com/)
+- curl转python代码，提高开发效率: [curlconverter](https://curlconverter.com/)
 - 1024程序员开发工具箱: [1024tools](https://1024tools.com/)
 
 ***
