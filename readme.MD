@@ -29,9 +29,9 @@
 
 ***
 
-### 辅助工具
+### 爬虫辅助工具
 
-- 把curl转换成python代码: [curlconverter](https://curlconverter.com/)
+- curl转成python代码，提高开发效率: [curlconverter](https://curlconverter.com/)
 - 1024程序员开发工具箱: [1024tools](https://1024tools.com/)
 
 ***
