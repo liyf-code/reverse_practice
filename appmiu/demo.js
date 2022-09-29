@@ -1,4 +1,4 @@
-var h ='富强民主文明和谐自由平等公正法治爱国敬业诚信友善';
+var h = '富强民主文明和谐自由平等公正法治爱国敬业诚信友善';
 
 function e() {
     for (var t = arguments.length, n = Array(t), r = 0; r < t; r++)
@@ -24,6 +24,10 @@ function e() {
                 throw c
         }
     }
+}
+
+function i() {
+    return Math.random() >= .5
 }
 
 function c(t) {
@@ -71,7 +75,8 @@ function a(t) {
 function l(t) {
     return a(c(o(t)))
 }
+
 // https://www.appmiu.com/key/
-var key = '12345',
+var key = '123456',
     res = l(key);
 console.log(res)
