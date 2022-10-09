@@ -18,7 +18,7 @@
 ### 关于 `pycharm激活码配置` 和 `chromedriver` 环境的配置
 
 - [chromedriver](chromedriver.md)
-- [pycharm激活码配置](激活方案汇总)
+- [pycharm激活码配置](pycharm激活方案汇总)
 
 ***
 
