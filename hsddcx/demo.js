@@ -1,6 +1,5 @@
 window = global;
 var hsddcx;
-var CryptoJS = require('crypto-js');
 
 !function (e) {
     function t(t) {
@@ -1694,8 +1693,8 @@ var u = hsddcx('a40e'),
     f = hsddcx.n(u),
     a = hsddcx('21bf'),
     s = hsddcx.n(a),
-    w = CryptoJS.enc.Utf8.parse("LP6IRTBX"),
-    O = CryptoJS.enc.Hex.parse("0102030405060708");
+    w = a.enc.Utf8.parse("LP6IRTBX"),
+    O = a.enc.Hex.parse("0102030405060708");
 
 function get_encrypt_params(page) {
     var t = {
@@ -1714,7 +1713,7 @@ function get_encrypt_params(page) {
             "isLive": "0"
         },
         n = JSON.stringify(t),
-        n1 = CryptoJS.enc.Utf8.parse(n),
+        n1 = a.enc.Utf8.parse(n),
         n2 = f.a.encrypt(n1, w, {
             iv: O
         }).toString()

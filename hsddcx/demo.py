@@ -76,6 +76,7 @@ def parse(encrypt_data):
         parse(encrypt_data)
     else:
         logger.info(f'没有下一页了，最后一页: {cur_page}')
+        return
 
 
 if __name__ == '__main__':
