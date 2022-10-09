@@ -65,7 +65,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 中国·国家地名信息库  |  [链接](https://dmfw.mca.gov.cn/online/map.html)  |    |  [dmfw_mca](dmfw_mca)
 看准网 |  [链接](https://www.kanzhun.com/firm/wage/1HV52g~~/p1.html)  |    |  [kanzhun](kanzhun)
 崔佬搭建的练习网站  |  [链接](https://spa2.scrape.center/page/1)  |    |  [spa2_scrape](yuanrenxue/spa2_scrape)
-浙江省核酸采样点查询  |  [链接](https://hsddcx.wsjkw.zj.gov.cn/webapp/app-mobile/epidMap)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/127225552)  |  [hsddcx](hsddcx)
+浙江省核酸采样点查询  |  [链接](https://hsddcx.wsjkw.zj.gov.cn/webapp/app-mobile/epidMap)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/127225552?spm=1001.2014.3001.5501)  |  [hsddcx](hsddcx)
 
 ***
 
