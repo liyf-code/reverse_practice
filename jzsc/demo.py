@@ -49,7 +49,7 @@ def get_encrypt_data(page):
         'total': '450',
     }
     response = requests.get('http://jzsc.mohurd.gov.cn/api/webApi/dataservice/query/comp/list', params=params,
-                            headers=headers, verify=False)
+                            headers=headers)
     return response.text
 
 
