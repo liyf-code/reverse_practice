@@ -4,6 +4,12 @@
 # @Author: liyf
 
 '''
+changelog 20221018
+加密方法没有变化，只是post请求对接口发生变化
+变化前的接口: https://ggzyfw.fujian.gov.cn/Trade/TradeInfo
+变化后的接口: https://ggzyfw.fujian.gov.cn/FwPortalApi/Trade/TradeInfo
+**************************************************************
+
 changelog 20220818
 todo: https://ggzyfw.fujian.gov.cn/web/index.html#/business/list
 该网站需要破解两处加密
@@ -109,7 +115,8 @@ def get_results(page):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
         'portal-sign': portal_sign,
     }
-    response = requests.post('https://ggzyfw.fujian.gov.cn/Trade/TradeInfo', headers=headers, json=json_data)
+    response = requests.post('https://ggzyfw.fujian.gov.cn/FwPortalApi/Trade/TradeInfo', headers=headers,
+                             json=json_data)
     return response.json()
 
 
