@@ -24,13 +24,13 @@
 
 ### download this repository
 - 克隆本项目至本地
-  - `git clone git@github.com:liyf-code/reverse_practice.git`
+  > - git clone git@github.com:liyf-code/reverse_practice.git
 - 准备 `python` 运行环境
-  - `cd reverse_practice`
-  - `pip3 install -r requirements.txt`
+  > - cd reverse_practice
+  > - pip3 install -r requirements.txt
 - 准备 `nodejs` 运行环境
-  - `cd reverse_practice`
-  - `npm install`
+  > - cd reverse_practice
+  > - npm install
 
 ***
 
