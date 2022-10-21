@@ -1,0 +1,29 @@
+{
+  "name": "reverse_practice",
+  "version": "1.0.0",
+  "description": "***",
+  "main": "index.js",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "jsencrypt": "^3.2.1",
+    "md5": "^2.3.0",
+    "node-rsa": "^1.1.1",
+    "jsdom": "^20.0.0",
+    "zlib": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18839782321/reverse_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18839782321/reverse_practice/issues"
+  },
+  "homepage": "https://github.com/18839782321/reverse_practice#readme"
+}
