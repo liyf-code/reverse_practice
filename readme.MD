@@ -22,6 +22,22 @@
 
 ***
 
+### 忽略某个目录或者文件
+- 由于 `node_modules` 太大，且默认是可以被上传的。所以我们需要创建一个 `.gitignore` 文件，然后就可以忽略上传某个目录或者文件了。
+- 步骤如下: 
+  ```text
+  cd reverse_practice
+  touch .gitignore
+  ```
+  > 创建好文件之后，在里边添加需要忽略的目录和文件即可
+- 忽略规则如下: 
+  ```text
+  target          //忽略这个target目录
+  angular.json    //忽略这个angular.json文件
+  log/*           //忽略log下的所有文件
+  css/*.css       //忽略css目录下的.css文件
+  ```
+
 ### download this repository
 
 - 克隆本项目至本地
