@@ -13,6 +13,5 @@ COPY package.json /reverse_practice
 # 下载py和nodejs需要的模块
 RUN pip install -r requirements.txt && \
     apt-get update -y && \
-    apt-get install vim -y && \
     apt-get install nodejs npm -y && \
     npm install
