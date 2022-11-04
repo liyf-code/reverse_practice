@@ -47,10 +47,10 @@
 ### download this repository
 - 克隆本项目至本地
   > - git clone git@github.com:liyf-code/reverse_practice.git
-- 准备 `python` 运行环境
+- 准备 `python` 运行环境（version: 3.9.1）
   > - cd reverse_practice
   > - pip3 install -r requirements.txt
-- 准备 `nodejs` 运行环境
+- 准备 `nodejs` 运行环境（version: 14.17.3）
   > - cd reverse_practice
   > - npm install
 
