@@ -45,7 +45,6 @@
 ***
 
 ### download this repository
-#### git方式
 - 克隆本项目至本地
   > - git clone git@github.com:liyf-code/reverse_practice.git
 - 准备 `python` 运行环境
@@ -54,17 +53,6 @@
 - 准备 `nodejs` 运行环境
   > - cd reverse_practice
   > - npm install
-  
-#### docker方式
-- 本地推送至`dockerhub`
-  ```nginx
-  cd reverse_practice
-  docker build -t reverse_practice:latest .
-  docker tag reverse_practice:latest lovesdog/reverse_practice:latest
-  docker push reverse_practice:latest
-  ```
-- 从`dockerhub`拉取项目至本地
-  - `docker pull lovesdog/reverse_practice:latest`
 
 ***
 
