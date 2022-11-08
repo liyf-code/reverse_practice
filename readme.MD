@@ -95,6 +95,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 崔佬搭建的练习网站  |  [链接](https://spa2.scrape.center/page/1)  |    |  [scrape_spa2](yuanrenxue/scrape_spa2)
 浙江省核酸采样点查询  |  [链接](https://hsddcx.wsjkw.zj.gov.cn/webapp/app-mobile/epidMap)  |  [点击跳转](https://blog.csdn.net/qq_42598133/article/details/127225552?spm=1001.2014.3001.5501)  |  [hsddcx](hsddcx)
 酷我音乐  |  [链接](http://www.kuwo.cn/search/list?key=%E4%B8%8B%E5%B1%B1)  |    |  [music_kuwo](music_kuwo)
+领导留言板  |  [链接](http://liuyan.people.com.cn/messageSearch)  |  [点击跳转](liuyan/demo.py)  |  [liuyan](liuyan)
 
 ***
 
