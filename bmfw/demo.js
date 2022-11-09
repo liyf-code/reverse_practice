@@ -19,11 +19,11 @@ function get_headers_params(timestamp) {
 
 function generateAjaxParmas(params, timestamp) {
     return {
-                paasHeader: passid,
-                timestampHeader: timestamp,
-                nonceHeader: nonce,
-                signatureHeader: CryptoJS.SHA256(timestamp + token + nonce + timestamp)
-                    .toString(CryptoJS.enc.Hex)
-                    .toUpperCase()
-            }
+        paasHeader: passid,
+        timestampHeader: timestamp,
+        nonceHeader: nonce,
+        signatureHeader: CryptoJS.SHA256(timestamp + token + nonce + timestamp)
+            .toString(CryptoJS.enc.Hex)
+            .toUpperCase()
+    }
 }
