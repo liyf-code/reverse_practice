@@ -98,6 +98,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 酷我音乐  |  [链接](http://www.kuwo.cn/search/list?key=%E4%B8%8B%E5%B1%B1)  |    |  [music_kuwo](music_kuwo)
 领导留言板  |  [链接](http://liuyan.people.com.cn/messageSearch)  |  [点击跳转](liuyan/demo.py)  |  [liuyan](liuyan)
 全国核酸检测机构查询  |  [链接](http://bmfw.www.gov.cn/hsjcjgcx/index.html?ADTAG=feiyanh5&adcode=440000)  |  [点击跳转](bmfw/demo.py)  |  [bmfw](bmfw)
+美食优惠聚合  |  [链接](https://static.waitwaitpay.com/web/sd_se/index.html#/)  |  [点击跳转](waitpay/demo.py)  |  [waitpay](waitpay)
 
 ***
 
