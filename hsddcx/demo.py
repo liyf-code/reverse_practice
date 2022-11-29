@@ -15,10 +15,8 @@ ctx = execjs.compile(''.join(js_str))
 
 def get_decrypt(page, encrypt_data):
     if page:
-        results = ctx.call('get_encrypt_params', page)
-    else:
-        results = ctx.call('get_decrypt_data', encrypt_data)
-    return results
+        return ctx.call('get_encrypt_params', page)
+    return ctx.call('get_decrypt_data', encrypt_data)
 
 
 def get_encrypt_results(page):
