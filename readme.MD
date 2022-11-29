@@ -100,7 +100,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 全国核酸检测机构查询  |  [链接](http://bmfw.www.gov.cn/hsjcjgcx/index.html?ADTAG=feiyanh5&adcode=440000)  |  [点击跳转](bmfw/demo.py)  |  [bmfw](bmfw)
 美食优惠聚合  |  [链接](https://static.waitwaitpay.com/web/sd_se/index.html#/)  |  [点击跳转](waitpay/demo.py)  |  [waitpay](waitpay)
 查策网  |  [链接](https://www.chacewang.com/chanye/index#)  |    |  [chacewang](chacewang)
-裁判文书返回数据解密  |  [链接](https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html?pageId=4c80b947ecca9eee0d410a2a65ef5e72&s8=02)  |    |  [cpws](cpws)
+裁判文书响应数据解密  |  [链接](https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html?pageId=4c80b947ecca9eee0d410a2a65ef5e72&s8=02)  |    |  [cpws](cpws)
 
 ***
 
