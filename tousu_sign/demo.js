@@ -1,5 +1,4 @@
 window = global;
-var fs = require('fs');
 
 var tt;
 
