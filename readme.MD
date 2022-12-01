@@ -102,6 +102,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 查策网  |  [链接](https://www.chacewang.com/chanye/index#)  |    |  [chacewang](chacewang)
 裁判文书响应数据解密  |  [链接](https://wenshu.court.gov.cn/website/wenshu/181217BMTKHNT2W0/index.html?pageId=4c80b947ecca9eee0d410a2a65ef5e72&s8=02)  |    |  [cpws](cpws)
 搜狐详情页图片地址解密  |  [链接](https://www.sohu.com/a/611710835_123753)  |  [点击跳转](souhu/demo.js)  |  [souhu](souhu)
+黑猫投诉  |  [链接](https://tousu.sina.com.cn/company/view/?couid=6384912431)  |    |  [tousu_sign](tousu_sign)
 
 ***
 
