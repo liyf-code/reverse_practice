@@ -5,7 +5,7 @@
 
 '''
 changelog 20221018
-加密方法没有变化，只是post请求对接口发生变化
+加密方法没有变化，只是post请求的接口url地址发生变化
 变化前的接口: https://ggzyfw.fujian.gov.cn/Trade/TradeInfo
 变化后的接口: https://ggzyfw.fujian.gov.cn/FwPortalApi/Trade/TradeInfo
 **************************************************************
