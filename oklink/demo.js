@@ -1,4 +1,3 @@
-
 global.Buffer = global.Buffer || require('buffer').Buffer;
 
 if (typeof btoa === 'undefined') {
@@ -29,7 +28,6 @@ function encryptApiKey(){
     var t = "a2c903cc-b31e-4547-9299-b6d07b7631ab",
         e = t.split(""),
         r = e.splice(0, 8);
-    console.log(e.concat(r).join(""))
     return e.concat(r).join("")
 }
 
