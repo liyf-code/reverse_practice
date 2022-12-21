@@ -105,6 +105,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 黑猫投诉  |  [链接](https://tousu.sina.com.cn/company/view/?couid=6384912431)  |    |  [tousu_sign](tousu_sign)
 猎聘  |  [链接](https://www.liepin.com/zhaopin/?inputFrom=www_index&workYearCode=0&key=&scene=input&ckId=cei1lxwcgvjwp0v613z0tdqvn0ziea1b&dq=)  |  [点击跳转](liepin/demo.js)  |  [liepin](liepin)
 阿里文学  |  [链接](https://www.aliwx.com.cn/reader?bid=6813923&cid=674174)  |    |  [aliwx](aliwx)
+当乐网  |  [链接](https://oauth.d.cn/auth/goLogin.html)  |  [点击跳转](oauth/demo.js)  |  [oauth](oauth)
 
 ***
 
