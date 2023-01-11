@@ -107,6 +107,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 阿里文学  |  [链接](https://www.aliwx.com.cn/reader?bid=6813923&cid=674174)  |    |  [aliwx](aliwx)
 当乐网  |  [链接](https://oauth.d.cn/auth/goLogin.html)  |  [点击跳转](oauth/demo.js)  |  [oauth](oauth)
 一品威客  |  [链接](https://www.epwk.com/login.html)  |  [点击跳转](ypwk/demo.js)  |  [ypwk](ypwk)
+喜马拉雅  | [链接](https://www.ximalaya.com/)  |  [点击跳转](https://mp.weixin.qq.com/s/2jYLbETc9jiq9YvnlOH72g)  |  [xmly](xmly)
 
 ***
 
