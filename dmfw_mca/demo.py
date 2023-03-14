@@ -10,7 +10,7 @@ todo changelog 20230314
   - 请求参数不变和请求方法都不变
 响应数据变更
   - 原接口 https://dmfw.mca.gov.cn/9095/stname/list 响应数据为密文，需要解密
-  - 新街口 https://dmfw.mca.gov.cn/stname/listPub 响应数据为明文
+  - 新接口 https://dmfw.mca.gov.cn/stname/listPub 响应数据为明文
 
 '''
 
