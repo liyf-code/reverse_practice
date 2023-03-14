@@ -5,6 +5,11 @@
 
 
 """
+todo changelog version 20230314
+- 接口变更
+  - 原接口：      http://jzsc.mohurd.gov.cn/api/webApi/dataservice/query/comp/list
+  - 变更后的接口： https://jzsc.mohurd.gov.cn/Api/webApi/dataservice/query/comp/list
+
 todo: http://jzsc.mohurd.gov.cn/data/company
 由于是破解该网站返回数据加密的过程，所以可以根据关键字 `decrypt` 搜索进行定位关键代码。在`app.xxx.js`中可以定位到解密位置，打断点，点击下一页，断点生效。
 把解密的函数copy下来，缺啥补啥。
@@ -48,7 +53,7 @@ def get_encrypt_data(page):
         'pgsz': '15',
         'total': '450',
     }
-    response = requests.get('http://jzsc.mohurd.gov.cn/api/webApi/dataservice/query/comp/list', params=params,
+    response = requests.get('https://jzsc.mohurd.gov.cn/Api/webApi/dataservice/query/comp/list', params=params,
                             headers=headers)
     return response.text
 
