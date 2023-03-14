@@ -3,6 +3,17 @@
 # @File: demo.py
 # @Author: liyf
 
+'''
+todo changelog 20230314
+接口变更
+  - https://dmfw.mca.gov.cn/9095/stname/list 改变为 https://dmfw.mca.gov.cn/stname/listPub
+  - 请求参数不变和请求方法都不变
+响应数据变更
+  - 原接口 https://dmfw.mca.gov.cn/9095/stname/list 响应数据为密文，需要解密
+  - 新街口 https://dmfw.mca.gov.cn/stname/listPub 响应数据为明文
+
+'''
+
 import execjs
 import requests
 
