@@ -18,6 +18,10 @@
 
 ***
 
+### 该仓库中，部分项目的维护记录 [CHANGELOG](changelog.md)
+
+***
+
 ### 关于 `pycharm激活码` 和 `chromedriver` 环境的配置
 
 - [chromedriver](chromedriver.md)
