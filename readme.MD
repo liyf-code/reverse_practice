@@ -114,6 +114,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 喜马拉雅  | [链接](https://www.ximalaya.com/)  |  [点击跳转](https://mp.weixin.qq.com/s/2jYLbETc9jiq9YvnlOH72g)  |  [xmly_login](xmly_login)
 滴滴外卖  |  [链接](https://passport.didichuxing.com/#/)  |  [点击跳转](didiwaimai/demo.py)  |  [didiwaimai](didiwaimai)
 红人点集  |  [链接](http://www.hh1024.com/#/login?redirect=%2FrealTimeLiving)  |  [点击跳转](hh1024/demo.py)  |  [hh1024](hh1024)
+毛毛租  |  [链接](https://www.maomaozu.com/#/build)  |  暂无  |  [maomaozu](maomaozu)
 
 ***
 
