@@ -21,7 +21,7 @@
 ### [CHANGELOG](changelog.md)
 ***
 ### 关于chrome浏览器
-- 逆向定位关键参数时，左侧不显示行号。[解决办法](chrome.md)
+- 逆向定位关键参数时，source面板不显示行号。[解决办法](chrome.md)
 ***
 
 ### 关于 `pycharm激活码` 和 `chromedriver` 环境的配置
