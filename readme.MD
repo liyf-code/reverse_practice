@@ -4,6 +4,7 @@
 
 ### 关于js逆向的参数定位技巧及无限debugger绕过
 
+- [Js逆向の参数定位方法](https://blog.csdn.net/weixin_43582101/article/details/112663900)
 - 参考 [Boris](https://github.com/Boris-code) 大佬的这篇文章
   > [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
 - 参考崔佬的这篇文章
@@ -19,9 +20,13 @@
 ***
 
 ### [CHANGELOG](changelog.md)
+
 ***
+
 ### 关于chrome浏览器
+
 - 逆向定位关键参数时，source面板不显示行号。[解决办法](chrome.md)
+
 ***
 
 ### 关于 `pycharm激活码` 和 `chromedriver` 环境的配置
