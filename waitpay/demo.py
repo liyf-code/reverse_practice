@@ -38,16 +38,14 @@ todo 步骤:
 - 优点
     - 速度快，省去了扣代码的步骤
 '''
-
-import execjs
 import requests
+
+from utils import *
 
 
 def get_decrypt_data(encrypt_data):
     # 传入加密数据，返回明文数据
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('decrypt', encrypt_data)
 
 
@@ -68,7 +66,6 @@ def get_encrypt_data(page):
         'sec-fetch-site': 'same-site',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
     }
-
     params = {
         'latitude': '39.9349',
         'longitude': '116.454',
@@ -77,7 +74,6 @@ def get_encrypt_data(page):
         'type': 'all',
         'with_vouchers': 'false',
     }
-
     response = requests.get('https://api.waitwaitpay.com/api/vendors/nearby', params=params, headers=headers)
     return response.text
 

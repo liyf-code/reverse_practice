@@ -3,8 +3,9 @@
 # @File: demo.py
 # @Author: liyf
 
-import execjs
 import requests
+
+from utils import *
 
 
 def get_encrypt_data():
@@ -33,9 +34,7 @@ def get_encrypt_data():
 
 
 def get_decrypt_data(encrypt_data):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     results = ctx.call('s', encrypt_data)
     data_list = results['list']
     for data in data_list:

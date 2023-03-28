@@ -43,7 +43,7 @@ import execjs
 import hashlib
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_data(start, encrypt_data):
@@ -54,9 +54,7 @@ def get_data(start, encrypt_data):
     :param encrypt_data: 返回结果解密，需要的参数
     :return: result
     """
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     if not encrypt_data:
         callback = 'get_payload'
         params = start
@@ -64,12 +62,6 @@ def get_data(start, encrypt_data):
         callback = 'get_decrypt_data'
         params = encrypt_data
     return ctx.call(str(callback), params)
-
-
-def get_sig(n) -> str:
-    md5 = hashlib.md5()
-    md5.update(n.encode('utf8'))
-    return md5.hexdigest()
 
 
 def get_results(page, start):
@@ -83,7 +75,7 @@ def get_results(page, start):
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
     }
     payload = get_data(start=start, encrypt_data=None)
-    sig = get_sig(f'{payload}W5D80NFZHAYB8EUI2T649RT2MNRMVE2O')
+    sig = Utils(origin_md5_str=f'{payload}W5D80NFZHAYB8EUI2T649RT2MNRMVE2O').encrypt_md5()
     params_dict = {'payload': payload, 'sig': sig}
     logger.info(f'第 {page + 1} 页: {params_dict}')
     # 请求参数，缺一不可

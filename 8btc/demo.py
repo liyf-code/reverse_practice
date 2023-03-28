@@ -4,10 +4,9 @@
 # @Author: liyf
 
 import time
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def conversion_time_str(postDate):
@@ -22,9 +21,7 @@ def conversion_time_str(postDate):
 
 
 def get_device_id_and_sign(sign_params):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     device_id = ctx.call('get_device_id', 20, 20)
     sign = ctx.call('get_sign', sign_params)
     return device_id, sign

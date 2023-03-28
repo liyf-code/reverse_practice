@@ -6,11 +6,11 @@
 import execjs
 import requests
 
+from utils import *
+
 
 def get_mcode():
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_mcode')
 
 

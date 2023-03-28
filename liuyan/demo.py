@@ -38,22 +38,10 @@
     - 最终把这三部分进行拼接，得到最终的值，并进行md5加密，即可得到signature
 """
 
-import hashlib
 import requests
 import time
 
-
-def encrypt(str) -> str:
-    """
-    实现md5加密
-    :param str: 待加密字符串
-    :return: 加密后的结果
-    """
-    md5 = hashlib.md5()
-    # md5.update(str) 报错信息：TypeError: Unicode-objects must be encoded before hashing
-    # 解决：必须指定encode
-    md5.update(str.encode('utf8'))
-    return md5.hexdigest()
+from utils import *
 
 
 def get_results(page):
@@ -77,9 +65,9 @@ def get_results(page):
     }
     para1 = '/v2/threads/search'
     para2 = json_data['param']
-    para3 = encrypt(app_code)[0:16]
+    para3 = Utils(origin_md5_str=app_code).encrypt_md5()[0:16]
     encrypt_str = para1 + para2 + para3
-    signature = encrypt(encrypt_str)
+    signature = Utils(origin_md5_str=encrypt_str).encrypt_md5()
     json_data['signature'] = signature
     response = requests.post('http://liuyan.people.com.cn/v2/threads/search', params=params, headers=headers,
                              json=json_data, verify=False)

@@ -2,10 +2,11 @@
 # @Date:  5:38 下午
 # @File: demo.py
 # @Author: liyf
-import execjs
 import requests
 
 from lxml import etree
+
+from utils import *
 
 
 def get_html(url):
@@ -40,9 +41,7 @@ def get_index_url(url):
 
 
 def get_detail_url(index_url, title):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     detail_url = ctx.call('get_detail_url', index_url)
     item = {
         'url': detail_url,

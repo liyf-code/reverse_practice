@@ -4,14 +4,13 @@
 # @Author: liyf
 
 import time
-import execjs
 import requests
+
+from utils import *
 
 
 def get_req_params(page):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_signature', page)
 
 
@@ -39,7 +38,6 @@ def get_results(page):
         'page_size': '10',
         'page': str(page),
     }
-
     response = requests.get('https://tousu.sina.com.cn/api/company/service_complaints', params=params, headers=headers)
     return response.json()
 

@@ -20,18 +20,14 @@ todo```
 接着就是常规操作，下断点，进入该函数之后，看下该函数做了什么操作，然后实行 `缺啥补啥` 的准则，扣js代码。
 """
 
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_sign(page):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
-    data = ctx.call('get_sign', page)
-    return data
+    ctx = Utils(js_file_name='demo.js').read_js_file()
+    return ctx.call('get_sign', page)
 
 
 def get_results(page):

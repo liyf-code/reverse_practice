@@ -35,11 +35,9 @@ todo: https://ggzyfw.fujian.gov.cn/web/index.html#/business/list
 import time
 import json
 import js2py
-import execjs
-import hashlib
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_n(params):
@@ -73,16 +71,8 @@ def get_n(params):
 
 
 def get_data(Data):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('b', Data)
-
-
-def md5_encrypt(n) -> str:
-    md5 = hashlib.md5()
-    md5.update(n.encode('utf8'))
-    return md5.hexdigest()
 
 
 def get_results(page):
@@ -102,7 +92,7 @@ def get_results(page):
         'ts': int(time.time() * 1000),
     }
     n = get_n(json_data)
-    portal_sign = md5_encrypt(n)
+    portal_sign = Utils(origin_md5_str=n).encrypt_md5()
     logger.info(f'第 {page} 页，portal_sign：{portal_sign}')
     headers = {
         'Accept': 'application/json, text/plain, */*',

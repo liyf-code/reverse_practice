@@ -27,12 +27,11 @@
 '''
 
 import time
-import execjs
 import requests
 
-with open('demo.js', 'r') as f:
-    js_str = f.readlines()
-ctx = execjs.compile(''.join(js_str))
+from utils import *
+
+ctx = Utils(js_file_name='demo.js').read_js_file()
 
 
 def get_encrypt_data(params, timestamp):

@@ -3,14 +3,11 @@
 # @File: login.py
 # @Author: liyf
 
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
-f = open('login.js', 'r')
-js_str = f.read()
-ctx = execjs.compile(''.join(js_str))
+ctx = Utils(js_file_name='login.js').read_js_file()
 
 
 def get_login_res(username, pwd):

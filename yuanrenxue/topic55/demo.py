@@ -7,11 +7,9 @@
 AES加密
 ECB模式，Pkcs7填充方式
 """
-
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_results(page):
@@ -32,9 +30,7 @@ def get_results(page):
 
 
 def get_data_list(result):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_data_list', result)
 
 

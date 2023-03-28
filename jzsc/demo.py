@@ -16,10 +16,9 @@ todo: http://jzsc.mohurd.gov.cn/data/company
 """
 
 import json
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_decrypt_data(encrypt_data):
@@ -28,9 +27,7 @@ def get_decrypt_data(encrypt_data):
     :param encrypt_data: 需要解密的数据
     :return: 解密后的数据
     """
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     decrypt_data = ctx.call('get_encrypt_data', encrypt_data)
     return json.loads(decrypt_data)
 

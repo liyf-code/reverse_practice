@@ -31,17 +31,13 @@ todo 破解流程
 
 - 难度，入门
 '''
-
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_wsgsig(data):
-    f = open('demo.js', 'r')
-    js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_wsgsig', data)
 
 

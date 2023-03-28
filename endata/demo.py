@@ -3,11 +3,9 @@
 # @File: demo.py
 # @Author: liyf
 import json
-
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_results(params):
@@ -39,11 +37,8 @@ def get_results(params):
 
 
 def get_decrypt_data(encrypt_data):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
-    decrypt_data = ctx.call('webInstace.shell', encrypt_data)
-    return decrypt_data
+    ctx = Utils(js_file_name='demo.js').read_js_file()
+    return ctx.call('webInstace.shell', encrypt_data)
 
 
 def parse():

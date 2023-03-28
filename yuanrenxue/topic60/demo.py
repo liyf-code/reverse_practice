@@ -7,11 +7,9 @@
 3DES加密
 ECB模式，Pkcs7填充方式
 """
-
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_results(page):
@@ -22,21 +20,17 @@ def get_results(page):
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
     }
-
     data = {
         'page': page,
     }
     des_data = get_jiami(page)
     url = f'https://www.python-spider.com/api/challenge60/{des_data}'
-
     response = requests.post(url, headers=headers, data=data)
     return response.json()
 
 
 def get_jiami(page):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_data', page)
 
 

@@ -28,23 +28,13 @@ todo 破解流程
 '''
 
 import time
-import execjs
-import hashlib
 import requests
 
-from loguru import logger
-
-
-def get_pwd_md5(pwd):
-    md5 = hashlib.md5()
-    md5.update(pwd.encode('utf8'))
-    return md5.hexdigest()
+from utils import *
 
 
 def get_sig(params):
-    f = open('demo.js', 'r')
-    js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_sig', params)
 
 
@@ -57,7 +47,7 @@ def get_results(username, pwd):
         'Content-Type': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
     }
-    pwd = get_pwd_md5(pwd)
+    pwd = Utils(origin_md5_str=pwd).encrypt_md5()
     logger.info(f'加密后的密码: {pwd}')
     json_data = {
         'phoneNum': str(username),

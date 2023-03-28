@@ -4,14 +4,11 @@
 # @Author: liyf
 
 import time
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
-f = open('demo.js', 'r')
-js_str = f.read()
-ctx = execjs.compile(''.join(js_str))
+ctx = Utils(js_file_name='demo.js').read_js_file()
 
 
 def get_data(page, encrypt_data):

@@ -3,9 +3,9 @@
 # @File: demo.py
 # @Author: liyf
 
-import execjs
 import requests
-from loguru import logger
+
+from utils import *
 
 
 def get_nonce():
@@ -23,14 +23,12 @@ def get_nonce():
 
 
 def get_pwd(pwd):
-    js_str = open('get_pwd.js', 'r')
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='get_pwd.js').read_js_file()
     return ctx.call('get_pwd', pwd)
 
 
 def get_signature(req_data):
-    js_str = open('get_signature.js', 'r')
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='get_signature.js').read_js_file()
     return ctx.call('F', req_data)
 
 

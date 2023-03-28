@@ -7,15 +7,13 @@
 粉笔网登录破解 - https://fenbi.com/page/home
 简单的RAS加密
 '''
-
 import requests
-import execjs
+
+from utils import *
 
 
 def get_js_pwd(password):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_password', password)
 
 

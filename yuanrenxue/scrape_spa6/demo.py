@@ -2,17 +2,13 @@
 # @Date:  6:20 下午
 # @File: demo.py
 # @Author: liyf
-
-import execjs
 import requests
 
-from loguru import logger
+from utils import *
 
 
 def get_token(page):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
+    ctx = Utils(js_file_name='demo.js').read_js_file()
     return ctx.call('get_token', page)
 
 
