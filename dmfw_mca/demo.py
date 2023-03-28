@@ -13,8 +13,6 @@ todo changelog 20230314
   - 新接口 https://dmfw.mca.gov.cn/stname/listPub 响应数据为明文
 
 '''
-
-import execjs
 import requests
 
 headers = {
@@ -29,7 +27,7 @@ headers = {
 }
 
 
-def get_encrypt_data(keyword):
+def get_results(keyword):
     data = {
         'type': 'place',
         'stName': keyword,
@@ -42,41 +40,15 @@ def get_encrypt_data(keyword):
         'page': '1',
         'size': '10',
     }
-    response = requests.post('https://dmfw.mca.gov.cn/9095/stname/list', headers=headers, data=data)
-    return response.text
-
-
-def get_content(keyword):
-    encrypt_data = get_encrypt_data(keyword)
-    content = encrypt_data[0:-6]
-    code = encrypt_data[-6:]
-    return content, code
-
-
-def get_str(code):
-    data = {
-        'code': code,
-    }
-    response = requests.post('https://dmfw.mca.gov.cn/9095/stname/keys/get.html', headers=headers,
-                             data=data)
-    return response.text
-
-
-def get_decrypt_data(content, strs):
-    with open('demo.js', 'r') as f:
-        js_str = f.readlines()
-    ctx = execjs.compile(''.join(js_str))
-    decrypt_data = ctx.call('decryptByDES', content, strs)
-    return decrypt_data
+    response = requests.post('https://dmfw.mca.gov.cn/stname/listPub', headers=headers, data=data)
+    return response.json()
 
 
 def parse():
     while True:
         keyword = input('请输入关键字:')
-        content, code = get_content(keyword)
-        strs = get_str(code)
-        decrypt_data = get_decrypt_data(content, strs)
-        records = decrypt_data['records']
+        results = get_results(keyword)
+        records = results['records']
         if not records:
             print(f'该关键字 (`{keyword}`) 下没有数据')
             print(f'===' * 20)
