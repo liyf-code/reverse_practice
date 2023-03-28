@@ -13,6 +13,8 @@
     - 新接口 `https://jzsc.mohurd.gov.cn/APi/webApi/dataservice/query/comp/list`
     - 具体是 `/Api/` 变为 `/APi/`。字母`p`由小写变为大写
 
+***
+
 ## changelog version 20230314
 
 #### 美食优惠聚合 (waitpay)
