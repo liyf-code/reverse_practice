@@ -17,7 +17,6 @@
 - 响应数据中的申报时间字段（start_time、end_time）进行了字体加密，未破解
 '''
 
-import execjs
 import requests
 
 from utils import *
