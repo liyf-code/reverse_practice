@@ -53,8 +53,9 @@ def get_results(cid, para):
         'cid': cid,
         'param': para,
     }
-    response = requests.get('https://car.yiche.com/web_api/car_model_api/api/v1/car/config_new_param', params=params,
+    response = requests.get('https://mapi.yiche.com/web_api/car_model_api/api/v1/car/config_new_param', params=params,
                             headers=headers)
+    print(response.text)
     return response.json()
 
 
