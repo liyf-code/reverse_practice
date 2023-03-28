@@ -50,7 +50,7 @@ def get_encrypt_data(page):
         'pgsz': '15',
         'total': '450',
     }
-    response = requests.get('https://jzsc.mohurd.gov.cn/Api/webApi/dataservice/query/comp/list', params=params,
+    response = requests.get('https://jzsc.mohurd.gov.cn/APi/webApi/dataservice/query/comp/list', params=params,
                             headers=headers)
     return response.text
 
