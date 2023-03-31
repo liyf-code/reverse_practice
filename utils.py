@@ -6,7 +6,11 @@
 import execjs
 import hashlib
 
+import ddddocr
+
 from loguru import logger
+
+ocr = ddddocr.DdddOcr(show_ad=False)
 
 
 class Utils:
