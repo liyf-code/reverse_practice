@@ -2,13 +2,16 @@
 
 ***
 
-### 关于js逆向的参数定位技巧及无限debugger绕过
+### 文章推荐
 
 - [Js逆向の参数定位方法](https://blog.csdn.net/weixin_43582101/article/details/112663900)
 - 参考 [Boris](https://github.com/Boris-code) 大佬的这篇文章
   > [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
 - 参考崔佬的这篇文章
   > [爬虫：JavaScript 逆向过程中无限 Debug 的绕过方案](https://mp.weixin.qq.com/s/MgKCZTnzS1M13ifvuuOYAQ)
+
+- 快速识别出来加密方式
+    - [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
 
 ***
 
