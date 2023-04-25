@@ -4,7 +4,7 @@
 # @Author: liyf
 
 """
-爬虫文档（http://liuyan.people.com.cn/messageSearch）
+网站首页（http://liuyan.people.com.cn/messageSearch）
 需要逆向的参数: 请求参数中的signature
 步骤：
 - 全局搜索 `signature`，可在`app.xxx.js`文件中找到如下代码:
@@ -26,7 +26,7 @@
             param: JSON.stringify(t)
         };
     ```
-- 通过分析该代码，可发现signature由h函数生成，且穿进去四个参数`e, t, a, c`
+- 通过分析该代码，可发现signature由h函数生成，且接收四个参数`e, t, a, c`
 - 而h函数最终返回 `l()(i)`
     - 其中i的值为: '/v2/threads/search{"position":0,"keywords":"","fid":null,"domainId":null,"typeId":null,"timeRange":null,"ansChecked":false,"stTime":null,"sortType":"0","page":10,"rows":10}a2eb17f65d6f4b3f'
     - 经过测试，最终signature的值就是对i进行md5加密得到的结果
