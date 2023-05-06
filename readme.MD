@@ -1,4 +1,4 @@
-### <font color=red size=5>PS: 本项目仅供学习交流，严禁用于任何商业和非法用途，非本人使用而产生的纠纷与一切后果均与本人无关。如有侵权，可联系本人删除（微信: `wojiaoliyf`）！</font>
+### PS: 从202207开始整理爬虫的一些逆向案例，不定时更新。本项目仅供学习交流，严禁用于任何商业和非法用途，非本人使用而产生的纠纷与一切后果均与本人无关。如有侵权，可联系本人删除（微信: `wojiaoliyf`）！
 
 ***
 
@@ -11,7 +11,7 @@
   > [爬虫：JavaScript 逆向过程中无限 Debug 的绕过方案](https://mp.weixin.qq.com/s/MgKCZTnzS1M13ifvuuOYAQ)
 
 - 快速识别出来加密方式
-    - [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
+  > [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
 
 ***
 
@@ -20,7 +20,7 @@
 > 我们辨别 cookie 来源时，可以看 httpOnly 这一栏，如果有 √ 的是来自于服务端，如果没有 √ 的话是本地生成的。
 ***
 
-- <big>生成 `requirements.txt`</big>
+### 生成 `requirements.txt`
   ```
   pipreqs reverse_practice --encoding=utf8 --force
   ```
@@ -50,16 +50,16 @@
 - 步骤如下:
   > 创建 `.gitignore` 文件
     ```text
-    cd reverse_practice
-    touch .gitignore
+        cd reverse_practice
+        touch .gitignore
     ```
   > 创建好文件之后，在里边添加需要忽略的目录和文件即可
 - 忽略规则如下:
   ```text
-  target          //忽略这个target目录
-  angular.json    //忽略这个angular.json文件
-  log/*           //忽略log下的所有文件
-  css/*.css       //忽略css目录下的.css文件
+      target          // 忽略这个target目录
+      angular.json    // 忽略这个angular.json文件
+      log/*           // 忽略log下的所有文件
+      css/*.css       // 忽略css目录下的.css文件
   ```
 
 ***
@@ -84,7 +84,7 @@
 
 ***
 
-### 从202207开始整理爬虫的一些逆向案例，不定时更新
+### 文档
 
 > ***个别网站的逆向思路及步骤，记录在py文件中***
 
