@@ -13,6 +13,8 @@
 - 快速识别出来加密方式
   > [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
 
+- hook
+
 ***
 
 ### 如何判断cookie是否是本地生成的
