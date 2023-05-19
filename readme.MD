@@ -13,7 +13,7 @@
 - 快速识别出来加密方式
   > [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
 
-- hook
+- [[007]爬虫系列 | 没有油候&Fiddler如何Hook？！！！](https://blog.csdn.net/weixin_41593408/article/details/119640939)
 
 ***
 
