@@ -28,6 +28,7 @@ def get_encrypt_data(page: str):
         'accept': 'application/json, text/plain, */*',
         'accept-language': 'zh-CN,zh;q=0.9',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
+        # "authorization": "Bearer xxxxxx"
     }
     params = {
         'page': page,

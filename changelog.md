@@ -1,3 +1,17 @@
+## changelog version 20230630
+
+#### 查策网（chacewang）
+
+- 请求头发生变化，解密方式未发生变化
+    - 添加了登录认证
+    - 请求头需携带 `authorization` 字段
+
+#### 新榜资讯-废弃（newrank）
+
+- 必须登录才能请求到数据
+
+***
+
 ## changelog version 20230328
 
 #### 易车网（yiche）
