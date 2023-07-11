@@ -136,6 +136,7 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 同花顺  |  [链接](http://q.10jqka.com.cn/)  |  暂无  |  [tonghuashun](tonghuashun)
 西域MRO商城  |  [链接](https://m.ehsy.com/#/pages/categoryList/index?catId=16474&parentId=5721&name=%E5%A4%8D%E5%90%88%E6%9C%BA%2F%E6%89%93%E5%8D%B0%E6%9C%BA)  |  [点击跳转](ehsy/demo.js)  |  [ehsy](ehsy)
 上海剑桥学院登录  |  [链接](https://cas.gench.edu.cn/cas/login)  |  [点击跳转](cas_gench/demo.py)  | [cas_gench](cas_gench)
+新华社  |  [链接](https://xhpfmapi.zhongguowangshi.com/vh512/account/25295)  |  [点击跳转](xhpfmapi/demo.py)  |  [xhpfmapi](xhpfmapi)
 ***
 
 ### 一些常见的乱码
