@@ -2,27 +2,23 @@
 
 ***
 
-### 文章推荐
-
-- [Js逆向の参数定位方法](https://blog.csdn.net/weixin_43582101/article/details/112663900)
-- 参考 [Boris](https://github.com/Boris-code) 大佬的这篇文章
-  > [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
-- 参考崔佬的这篇文章
-  > [爬虫：JavaScript 逆向过程中无限 Debug 的绕过方案](https://mp.weixin.qq.com/s/MgKCZTnzS1M13ifvuuOYAQ)
-
-- 快速识别出来加密方式
-  > [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
-
-- [[007]爬虫系列 | 没有油候&Fiddler如何Hook？！！！](https://blog.csdn.net/weixin_41593408/article/details/119640939)
+- <big>如果该项目对你有用的话，请点个star，谢谢！</big>
 
 ***
 
-### 如何判断cookie是否是本地生成的
+### 文章推荐
 
-> 我们辨别 cookie 来源时，可以看 httpOnly 这一栏，如果有 √ 的是来自于服务端，如果没有 √ 的话是本地生成的。
+- [js逆向技巧分析](https://zhuanlan.zhihu.com/p/108207751)
+- [Js逆向の参数定位方法](https://blog.csdn.net/weixin_43582101/article/details/112663900)
+- [爬虫：JavaScript 逆向过程中无限 Debug 的绕过方案](https://mp.weixin.qq.com/s/MgKCZTnzS1M13ifvuuOYAQ)
+- [[007]爬虫系列 | 没有油候&Fiddler如何Hook？！！！](https://blog.csdn.net/weixin_41593408/article/details/119640939)
+- [CTF&爬虫：掌握这些特征，一秒识别密文加密方式](https://mp.weixin.qq.com/s/J7PTogOtVIQhUH204Qt3fA)
+- [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
+
 ***
 
 ### 生成 `requirements.txt`
+
   ```
   pipreqs reverse_practice --encoding=utf8 --force
   ```
@@ -30,6 +26,11 @@
 ***
 
 ### [CHANGELOG](changelog.md)
+
+### 一些常见的乱码
+
+- 数据来源于爬虫交流群里边，一个大佬发的，如有侵权，请联系本人删除。
+  ![常见的乱码](images/response_type.png)
 
 ***
 
@@ -81,8 +82,7 @@
 
 ### 爬虫辅助工具
 
-- curl转python代码，提高开发效率: [curlconverter](https://curlconverter.com/)
-- 1024程序员开发工具箱: [1024tools](https://1024tools.com/)
+- 爬虫工具库: [spidertools](https://spidertools.cn/#/)
 
 ***
 
@@ -137,109 +137,3 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 西域MRO商城  |  [链接](https://m.ehsy.com/#/pages/categoryList/index?catId=16474&parentId=5721&name=%E5%A4%8D%E5%90%88%E6%9C%BA%2F%E6%89%93%E5%8D%B0%E6%9C%BA)  |  [点击跳转](ehsy/demo.js)  |  [ehsy](ehsy)
 上海剑桥学院登录  |  [链接](https://cas.gench.edu.cn/cas/login)  |  [点击跳转](cas_gench/demo.py)  | [cas_gench](cas_gench)
 新华社  |  [链接](https://xhpfmapi.zhongguowangshi.com/vh512/account/25295)  |  [点击跳转](xhpfmapi/demo.py)  |  [xhpfmapi](xhpfmapi)
-***
-
-### 一些常见的乱码
-
-- 数据来源于爬虫交流群里边，一个大佬发的，如有侵权，请联系本人删除。
-  ![常见的乱码](images/response_type.png)
-
-***
-
-### 一些常用的hook代码
-
-> 以下汇总常用的hook代码，来源于公众号文章 [JS 逆向之 Hook，吃着火锅唱着歌，突然就被麻匪劫了！](https://mp.weixin.qq.com/s/IYFyjVrVkHtUdCzn9arkJQ)
-
-- <big>Hook cookies</big>
-  ```javascript
-  (function () {
-    'use strict';
-    var cookieTemp = '';
-    Object.defineProperty(document, 'cookie', {
-      set: function (val) {
-        if (val.indexOf('__dfp') != -1) {
-          debugger;
-        }
-        console.log('Hook捕获到cookie设置->', val);
-        cookieTemp = val;
-        return val;
-      },
-      get: function () {
-        return cookieTemp;
-      },
-    });
-  })();
-  ```
-
-- <big>Hook headers</big>
-  ```javascript
-  (function () {
-      var org = window.XMLHttpRequest.prototype.setRequestHeader;
-      window.XMLHttpRequest.prototype.setRequestHeader = function (key, value) {
-          if (key == 'safe') {
-              debugger;
-          }
-          return org.apply(this, arguments);
-      };
-  })();
-  ```
-
-- </big>Hook URL</big>
-  ```javascript
-  (function () {
-      var open = window.XMLHttpRequest.prototype.open;
-      window.XMLHttpRequest.prototype.open = function (method, url, async) {
-          if (url.indexOf("login") != -1) {
-              debugger;
-          }
-          return open.apply(this, arguments);
-      };
-  })();
-  ```
-
-- <big>Hook JSON.stringify</big>
-  ```javascript
-  (function() {
-      var stringify = JSON.stringify;
-      JSON.stringify = function(params) {
-          console.log("Hook JSON.stringify ——> ", params);
-          debugger;
-          return stringify(params);
-      }
-  })();
-  ```
-
-- <big>Hook JSON.parse</big>
-  ```javascript
-  (function() {
-      var parse = JSON.parse;
-      JSON.parse = function(params) {
-          console.log("Hook JSON.parse ——> ", params);
-          debugger;
-          return parse(params);
-      }
-  })();
-  ```
-
-- <big>Hook eval</big>
-  ```javascript
-  (function() {
-      // 保存原始方法
-      window.__cr_eval = window.eval;
-      // 重写 eval
-      var myeval = function(src) {
-          console.log(src);
-          console.log("=============== eval end ===============");
-          debugger;
-          return window.__cr_eval(src);
-      }
-      // 屏蔽 JS 中对原生函数 native 属性的检测
-      var _myeval = myeval.bind(null);
-      _myeval.toString = window.__cr_eval.toString;
-      Object.defineProperty(window, 'eval', {
-          value: _myeval
-      });
-  })();
-  ```
-
-***
