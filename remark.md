@@ -8,6 +8,8 @@
 
 ### [CHANGELOG](changelog.md)
 
+***
+
 ### 一些常见的乱码
 
 - 数据来源于爬虫交流群里边，一个大佬发的，如有侵权，请联系本人删除。
@@ -45,19 +47,6 @@
       log/*           // 忽略log下的所有文件
       css/*.css       // 忽略css目录下的.css文件
   ```
-
-***
-
-### download this repository
-
-- 克隆本项目至本地
-  > - git clone git@github.com:liyf-code/reverse_practice.git
-- 准备 `python` 运行环境（version: 3.9.1）
-  > - cd reverse_practice
-  > - pip3 install -r requirements.txt
-- 准备 `nodejs` 运行环境（version: 14.17.3）
-  > - cd reverse_practice
-  > - npm install
 
 ***
 
