@@ -86,3 +86,4 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 上海剑桥学院登录  |  [链接](https://cas.gench.edu.cn/cas/login)  |  [点击跳转](cas_gench/demo.py)  | [cas_gench](cas_gench)
 新华社  |  [链接](https://xhpfmapi.zhongguowangshi.com/vh512/account/25295)  |  [点击跳转](xhpfmapi/demo.py)  |  [xhpfmapi](xhpfmapi)
 甘肃医保公共服务  |  [链接](https://ybdzpz.ylbz.gansu.gov.cn/hsa-local-prod/web/hallEnter/#/search/Drugstore)  |  [点击跳转](ybdzpz/demo.py)  |  [ybdzpz](ybdzpz)
+远川研究所  |  [链接](https://stream-capital.com/search)  |  暂无  |  [stream_capital](stream_capital)
