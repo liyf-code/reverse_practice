@@ -87,3 +87,4 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 新华社  |  [链接](https://xhpfmapi.zhongguowangshi.com/vh512/account/25295)  |  [点击跳转](xhpfmapi/demo.py)  |  [xhpfmapi](xhpfmapi)
 甘肃医保公共服务  |  [链接](https://ybdzpz.ylbz.gansu.gov.cn/hsa-local-prod/web/hallEnter/#/search/Drugstore)  |  [点击跳转](ybdzpz/demo.py)  |  [ybdzpz](ybdzpz)
 远川研究所  |  [链接](https://stream-capital.com/search)  |  暂无  |  [stream_capital](stream_capital)
+热搜时光机  |  [链接](https://www.weibotop.cn/2.0/)  |  暂无  |  [weibotop](weibotop)
