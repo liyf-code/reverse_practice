@@ -36,3 +36,8 @@ var CryptoJS = require('crypto-js'),
 function get_pwd(pwd, username) {
     return encodeURI(T(pwd, F(username)))
 }
+
+var pwd = '123456',
+    username = 'liyufeng123',
+    enc_pwd = get_pwd(pwd, username);
+console.log(enc_pwd)
