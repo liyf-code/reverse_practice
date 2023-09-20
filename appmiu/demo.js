@@ -77,6 +77,6 @@ function l(t) {
 }
 
 // https://www.appmiu.com/key/
-var key = '123456',
+var key = '1234567',
     res = l(key);
 console.log(res)
