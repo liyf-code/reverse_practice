@@ -300,4 +300,4 @@ var kuwo;
 var l = kuwo(109),
     c = kuwo.n(l),
     r = c()();
-console.log('reqid:', r)
+console.log('reqid的值为:', r)
