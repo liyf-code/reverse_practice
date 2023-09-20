@@ -97,8 +97,6 @@ def get_results(page):
     headers = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/json;charset=UTF-8',
         'Origin': 'https://ggzyfw.fujian.gov.cn',
         'Referer': 'https://ggzyfw.fujian.gov.cn/web/index.html',
