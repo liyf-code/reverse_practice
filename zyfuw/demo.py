@@ -16,8 +16,6 @@ def get_html(url):
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36',
         'Host': 'ggzy.zwfwb.tj.gov.cn',
         'Accept-Encoding': 'gzip, deflate',
-        'Cache-Control': 'no-cache',
-        'Pragma': 'no-cache',
         'Cookie': 'clientlanguage=zh_CN; JSESSIONID=B2C036872F09FB3066BC1E1D71CF6D69'
     }
 
@@ -52,6 +50,7 @@ def get_detail_url(index_url, title):
 
 if __name__ == '__main__':
     for page in range(1, 10):
+        # http://ggzy.zwfwb.tj.gov.cn/jyxx/index_1.jhtml
         url = f'http://ggzy.zwfwb.tj.gov.cn/jyxx/index_{page}.jhtml'
         get_index_url(url)
         # break
