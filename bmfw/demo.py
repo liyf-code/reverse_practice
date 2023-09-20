@@ -84,7 +84,6 @@ def parse():
             area_address = data['area_address']
             print(f'机构名称: {name}\n联系电话: {phone}\n所在区县: {area_address}\n机构地址: {address}')
             print('===' * 20)
-        # break
 
 
 if __name__ == '__main__':
