@@ -1,4 +1,5 @@
-/* https://my.37.com/login.html?url=//my.37.com/
+/*
+* https://my.37.com/login.html?url=//my.37.com/
 * 全局搜索 `password=`，在sq.login2015.js中发现 `h.password = td(f)`
 * 此处即为加密位置
 * 下断，重新点击登录按钮，单步调试就可以进入td的函数内部
