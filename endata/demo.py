@@ -12,8 +12,6 @@ def get_results(params):
     headers = {
         'Accept': 'text/plain, */*; q=0.01',
         'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Origin': 'https://www.endata.com.cn',
         'Pragma': 'no-cache',
