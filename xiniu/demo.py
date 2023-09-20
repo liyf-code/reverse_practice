@@ -70,7 +70,6 @@ def get_results(page, start):
         'accept': 'application/json',
         'accept-language': 'zh-CN,zh;q=0.9',
         'origin': 'https://www.xiniudata.com',
-        'pragma': 'no-cache',
         'referer': 'https://www.xiniudata.com/industry/newest?from=data',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
     }
