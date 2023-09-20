@@ -22,7 +22,6 @@ def ts2time(ts):
 
 def get_results(page):
     headers = {
-        'authority': 'tousu.sina.com.cn',
         'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
         'accept-language': 'zh-CN,zh;q=0.9',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
