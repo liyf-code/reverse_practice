@@ -17,3 +17,11 @@ function get_sign(c) {
         , a = CryptoJS.enc.Utf8.parse(t);
     return CryptoJS.AES.encrypt(e, a, n).toString().replace(/\//g, "_").replace(/\+/g, "-")
 }
+
+
+var device_id = get_device_id(20, 20);
+console.log(device_id)
+
+var sign_params = {"appId": "1", "timestamp": 1695189097, "serverCode": "0"},
+    sign = get_sign(sign_params);
+console.log(sign)
