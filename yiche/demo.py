@@ -39,7 +39,6 @@ def get_results(cid, para):
     x_sign = get_s_sign(params)
     headers = {
         'Accept': '*/*',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
         'Referer': 'https://car.yiche.com/yunqueq1/peizhi/',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
         'content-type': 'application/json;charset=UTF-8',
@@ -55,7 +54,6 @@ def get_results(cid, para):
     }
     response = requests.get('https://mapi.yiche.com/web_api/car_model_api/api/v1/car/config_new_param', params=params,
                             headers=headers)
-    print(response.text)
     return response.json()
 
 
