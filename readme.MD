@@ -113,3 +113,4 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 凤凰云智  |  [链接](https://www.iyunzhi.com/)  |  暂无  |  [iyunzhi](iyunzhi)
 中国高校IT实力排行榜  |  [链接](https://bbs.csdn.net/college?utm_source=csdn_bbs_toolbar&spm=1035.2022.3001.8850&category=37)  |  [点击跳转](bbs_csdn/demo.py)  |  [bbs_csdn](bbs_csdn)
 行业动态_全国新书目平台  |  [链接](https://cnpub.com.cn/information.html#/search?nav=1)  |  暂无  |  [cnpub](cnpub)
+天津市公共资源交易平台  |  [链接](ggzy.zwfwb.tj.gov.cn)  |  暂无  |  [zyfuw](zyfuw)
