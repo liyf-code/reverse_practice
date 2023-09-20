@@ -176,7 +176,6 @@ def get_code(timestamp):
 def get_results(page):
     timestamp = str(int(time.time() * 1000))
     headers = {
-        'authority': 'api.mytokenapi.com',
         'accept': 'application/json, text/plain, */*',
         'content-type': 'application/x-www-form-urlencoded;charset=utf-8',
         'origin': 'https://www.mytokencap.com',
