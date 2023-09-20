@@ -40,7 +40,6 @@ def get_encrypt_data(page):
     """
     headers = {
         'Accept': 'application/json, text/plain, */*',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
         'Referer': 'http://jzsc.mohurd.gov.cn/data/company',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
         'timeout': '30000',
