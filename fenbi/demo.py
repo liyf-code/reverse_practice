@@ -21,7 +21,6 @@ def get_json_data(user, pwd):
     headers = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36',
     }
@@ -30,14 +29,12 @@ def get_json_data(user, pwd):
         'kav': '12',
         'app': 'web',
     }
-
     data = {
         'password': get_js_pwd(pwd),
         'persistent': 'true',
         'app': 'web',
         'phone': user,
     }
-
     response = requests.post('https://login.fenbi.com/api/users/loginV2?kav=12&app=web&av=80', params=params,
                              headers=headers, data=data)
     return response.json()
