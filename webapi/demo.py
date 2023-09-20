@@ -27,7 +27,6 @@ def get_results():
         'X-Requested-With': 'XMLHttpRequest',
         'mcode': get_mcode(),
     }
-
     response = requests.post('https://webapi.cninfo.com.cn/api/sysapi/p_sysapi1128', headers=headers)
     return response.json()
 
