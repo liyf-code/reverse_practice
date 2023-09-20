@@ -22,7 +22,6 @@ def get_encrypt_res(page):
         'Accept': '*/*',
         'Accept-Language': 'zh-CN,zh;q=0.9',
         'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/json; charset=UTF-8',
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
     }
