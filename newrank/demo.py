@@ -38,7 +38,6 @@ def get_results(page):
         'accept-language': 'zh-CN,zh;q=0.9',
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
         'origin': 'https://www.newrank.cn',
-        'pragma': 'no-cache',
         'referer': 'https://www.newrank.cn/public/news.html',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
         'x-requested-with': 'XMLHttpRequest',
