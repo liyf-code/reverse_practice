@@ -454,3 +454,6 @@ function get_params(page) {
         h.encSecKey = c(i, e, f),
         h
 }
+
+var data = get_params(1);
+console.log(data)
