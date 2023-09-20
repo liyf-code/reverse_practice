@@ -55,5 +55,5 @@ function getApiKey(){
     return t = encryptTime(t), comb(e, t)
 }
 
-res = getApiKey()
+var res = getApiKey();
 console.log(res)
