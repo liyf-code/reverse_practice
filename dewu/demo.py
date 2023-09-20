@@ -56,7 +56,7 @@ def get_results(page):
 
 
 def parse():
-    for page in range(1, 20):
+    for page in range(1, 10):
         results = get_results(page)
         data_list = results['data']['hotList']
         for data in data_list:
