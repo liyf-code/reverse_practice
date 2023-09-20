@@ -18,7 +18,6 @@ import requests
 headers = {
     'Accept': '*/*',
     'Accept-Language': 'zh-CN,zh;q=0.9',
-    'Connection': 'keep-alive',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Origin': 'https://dmfw.mca.gov.cn',
     'Referer': 'https://dmfw.mca.gov.cn/online/map.html',
