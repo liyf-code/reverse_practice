@@ -21,8 +21,6 @@ def get_encrypt_results(page):
         'Accept': 'application/json, text/plain, */*',
         'Accept-Language': 'zh-CN,zh;q=0.9',
         'Ali-Version': '7.6.15',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
         'Content-Type': 'application/json; charset=UTF-8',
         'Origin': 'https://hsddcx.wsjkw.zj.gov.cn',
         'Pragma': 'no-cache',
