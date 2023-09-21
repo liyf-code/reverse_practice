@@ -2,6 +2,17 @@
 
 ***
 
+### 不定期记录网站的反爬措施是否变化，记录在 [CHANGELOG](changelog.md) 中
+
+- <big>[一些其他的文档](remark.md)</big>
+- 爬虫工具库: [spidertools](https://spidertools.cn/#/)
+
+***
+
+### <big>如果该项目对你有用的话，请点个star，谢谢！</big>
+
+***
+
 - 神兽来源于[企查猫](https://www.qichamao.com)
 
           ┏┓　　　┏┓
@@ -21,10 +32,6 @@
              ┗┓┓┏━┳┓┏┛
                ┃┫┫　┃┫┫
                ┗┻┛　┗┻┛
-
-***
-
-- <big>如果该项目对你有用的话，请点个star，谢谢！</big>
 
 ***
 
@@ -49,10 +56,6 @@
 - 准备 `nodejs` 运行环境（version: 14.17.3）
   > - cd reverse_practice
   > - npm install
-
-***
-
-- [一些其他的文档](remark.md)
 
 ***
 
