@@ -33,7 +33,6 @@ def get_xyz(h):
 
 def get_results(page):
     headers = {
-        'authority': 'www.newrank.cn',
         'accept': 'application/json, text/javascript, */*; q=0.01',
         'accept-language': 'zh-CN,zh;q=0.9',
         'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
