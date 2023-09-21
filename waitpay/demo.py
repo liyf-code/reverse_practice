@@ -57,7 +57,6 @@ def get_encrypt_data(page):
         'accept-language': 'zh-CN,zh;q=0.9',
         'cache-control': 'no-cache',
         'origin': 'https://static.waitwaitpay.com',
-        'pragma': 'no-cache',
         'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
         'sec-ch-ua-mobile': '?0',
         'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
