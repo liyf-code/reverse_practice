@@ -118,3 +118,4 @@ MyToken  | [链接](https://www.mytokencap.com/)  |  [点击跳转](https://blog
 行业动态_全国新书目平台  |  [链接](https://cnpub.com.cn/information.html#/search?nav=1)  |  暂无  |  [cnpub](cnpub)
 天津市公共资源交易平台  |  [链接](ggzy.zwfwb.tj.gov.cn)  |  暂无  |  [zyfuw](zyfuw)
 华中科技大学协和深圳医院招采系统  |  [链接](https://zbcg.sznsyy.cn/homeNotice)  |  暂无  |  [zbcg_sznsyy](zbcg_sznsyy)
+中国土地市场网  |  [连接](https://www.landchina.com/#/supplyPlan)  |  [点击跳转](landchina/demo.py)  |  [landchina](landchina)
