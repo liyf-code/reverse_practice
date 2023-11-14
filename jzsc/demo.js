@@ -1,6 +1,6 @@
 var CryptoJS = require('crypto-js')
 
-var f = CryptoJS.enc.Utf8.parse("jo8j9wGw%6HbxfFn")
+var f = CryptoJS.enc.Utf8.parse("Dt8j9wGw%6HbxfFn")
     , m = CryptoJS.enc.Utf8.parse("0123456789ABCDEF");
 
 function get_encrypt_data(t) {
