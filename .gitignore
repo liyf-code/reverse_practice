@@ -2,3 +2,5 @@ node_modules
 package-lock.json
 .idea
 __pycache__
+.xml
+.iml

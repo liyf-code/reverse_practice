@@ -24,7 +24,7 @@ class Utils:
         self.origin_md5_str = origin_md5_str
 
     def read_js_file(self):
-        f = open(self.js_file_name, 'r')
+        f = open(self.js_file_name, 'r', encoding='utf8')
         js_str = f.read()
         ctx = execjs.compile(''.join(js_str))
         return ctx
