@@ -5,10 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "crypto-js": "^4.1.1",
+    "jsdom": "^20.0.0",
     "jsencrypt": "^3.2.1",
     "md5": "^2.3.0",
     "node-rsa": "^1.1.1",
-    "jsdom": "^20.0.0",
     "zlib": "^1.0.5"
   },
   "devDependencies": {},
