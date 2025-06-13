@@ -2,7 +2,7 @@
 # @Date:  4:33 下午
 # @File: demo.py
 # @Author: liyf
-
+import json
 import re
 import execjs
 import requests
@@ -73,8 +73,8 @@ def get_decrypt_data(encrypt_data):
 def get_info():
     html = get_html()
     a_str = re.findall(re.compile(r'dataChapters">(.*?)</i>', re.S), html)[0]
-    data_info = str(a_str).replace('&quot;', '"').replace('true', 'True').replace('false', 'False').replace('amp;', '')
-    item = eval(data_info)  # 字符串转字典
+    data_info = str(a_str).replace('&quot;', '"').replace('amp;', '')
+    item = json.loads(data_info)  # 字符串转字典
     data_list = item['chapterList']
     info = {
         volumedata['volumeName']: {
