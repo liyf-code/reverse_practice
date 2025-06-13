@@ -29,7 +29,7 @@ def get_json_data(user, pwd):
         'Service': 'soufun-passport-web',
         'AutoLogin': '1',
     }
-
+    logger.info(data)
     response = requests.post('https://passport.fang.com/login.api', headers=headers, data=data)
     return response.json()
 
