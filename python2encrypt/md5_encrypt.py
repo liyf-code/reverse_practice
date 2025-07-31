@@ -21,7 +21,7 @@ def encrypt(str) -> str:
 
 
 if __name__ == '__main__':
-    encrypt_str = '123456'
+    encrypt_str = '1753090527_f479106f00cef5ae_liyufeng'
     logger.info(f'md5加密前为: {encrypt_str}')  # md5加密前为: 123456
     res = encrypt(encrypt_str)
     logger.info(f'md5加密后为: {res}')  # md5加密后为: e10adc3949ba59abbe56e057f20f883e
