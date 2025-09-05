@@ -45,7 +45,8 @@ def parse():
             accept_time = data['noticeSendTime']
             uuid = data['bulletinID']
             detail_url = f'http://ctbpsp.com/#/bulletinDetail?uuid={uuid}&inpvalue=&dataSource=0'
-            print(f'标题: {title}\n公告类型: {bulletin_type}\n省份: {province}\n接收时间: {accept_time}\n详情url地址: {detail_url}')
+            print(
+                f'标题: {title}\n公告类型: {bulletin_type}\n省份: {province}\n接收时间: {accept_time}\n详情url地址: {detail_url}')
             print('===' * 30)
 
 

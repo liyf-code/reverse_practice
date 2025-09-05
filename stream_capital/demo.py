@@ -40,7 +40,8 @@ def get_decrypt_data():
             post_date = data['ctime']
             theme = data['themeTitle']
             tags = '、'.join([tag['tagName'] for tag in data['tags']])
-            print(f'标题: {title}\n内容: {content}\n作者: {user_name}\t更新日期: {post_date}\n标签: {tags}\t主题标题: {theme}')
+            print(
+                f'标题: {title}\n内容: {content}\n作者: {user_name}\t更新日期: {post_date}\n标签: {tags}\t主题标题: {theme}')
             print('===' * 20)
         print('***' * 30)
         break

@@ -56,7 +56,8 @@ def parse(encrypt_data):
         work_time = data['workTime']
         status = data['serviceStatus']
         res = '畅通' if status == 2 else '休息'
-        print(f'名称: {name}\n电话: {phone}\n地址: {address}\n级别: {level}\n是否免费: {res_free}\n工作时间: {work_time}\n当前状态: {res}')
+        print(
+            f'名称: {name}\n电话: {phone}\n地址: {address}\n级别: {level}\n是否免费: {res_free}\n工作时间: {work_time}\n当前状态: {res}')
         print('===' * 25)
 
     # 下一页逻辑，循环入口

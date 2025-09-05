@@ -33,7 +33,8 @@ def main():
     user = '1234567890'
     pwd = '123456'
     login_res = get_login_res(user, pwd)
-    logger.info(f'登录结果如下:\n{login_res}')  # {'code': '999999', 'data': None, 'message': '账户格式不正确', 'success': False}
+    logger.info(
+        f'登录结果如下:\n{login_res}')  # {'code': '999999', 'data': None, 'message': '账户格式不正确', 'success': False}
     msg = login_res['message']
     logger.info(f'登录状态: {msg}')  # 登录状态: 账户格式不正确
 
