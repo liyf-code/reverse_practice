@@ -14,7 +14,7 @@ function aes_encrypt(word) {
     return encrypted.toString();
 }
 
-function get_uc(page){
+function get_uc(page) {
     window.t = Date.parse(new Date()) / 1000;
     word = window.t + '|' + page
     uc = aes_encrypt(word)

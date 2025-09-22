@@ -15,7 +15,7 @@ var self = global
 
 window = {}
 
-function encryptTime(t){
+function encryptTime(t) {
     var e = (1 * t + 1111111111111).toString().split(""),
         r = parseInt(10 * Math.random(), 10),
         n = parseInt(10 * Math.random(), 10),
@@ -23,7 +23,7 @@ function encryptTime(t){
     return e.concat([r, n, o]).join("")
 }
 
-function encryptApiKey(){
+function encryptApiKey() {
     //this.API_KEY = "a2c903cc-b31e-4547-9299-b6d07b7631ab"
     var t = "a2c903cc-b31e-4547-9299-b6d07b7631ab",
         e = t.split(""),
@@ -31,7 +31,7 @@ function encryptApiKey(){
     return e.concat(r).join("")
 }
 
-function comb(e, t){
+function comb(e, t) {
     /*
     * var r = "".concat(t, "|").concat(e) 时
     * 得到的结果为：Mjc2ODExNzExOTg2MTg4OXwtYjMxZS00NTQ3LTkyOTktYjZkMDdiNzYzMWFiYTJjOTAzY2M=
@@ -49,7 +49,7 @@ function comb(e, t){
     return self.btoa(r)
 }
 
-function getApiKey(){
+function getApiKey() {
     var t = (new Date).getTime(),
         e = encryptApiKey();
     return t = encryptTime(t), comb(e, t)

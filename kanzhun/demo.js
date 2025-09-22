@@ -603,11 +603,11 @@ window = global;
         ,
         S.n = function (e) {
             var n = e && e.__esModule ? function () {
-                    return e.default
-                }
-                : function () {
-                    return e
-                }
+                        return e.default
+                    }
+                    : function () {
+                        return e
+                    }
             ;
             return S.d(n, "a", n),
                 n

@@ -20,6 +20,6 @@ let date = Date.parse(new Date()),
     window.sign = Encrypt(date);
 })(date, key, iv);
 
-function get_signature(){
+function get_signature() {
     return window.sign
 }
